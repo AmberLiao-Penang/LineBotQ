@@ -163,6 +163,13 @@ def pretty_echo(event):
 def sendTextMessageToMe():
     body = request.json
     payload = {
+        "to": my_line_id,
+        "messages": [
+            {
+                "type": "text",
+                "text": body["text"]
+            }
+        ]
     }
     pushMessage(payload)
     return 'OK'
