@@ -24,7 +24,7 @@ client_id = config.get('line-bot', 'client_id')
 client_secret = config.get('line-bot', 'client_secret')
 HEADER = {
     'Content-type': 'application/json',
-    'Authorization': F'Bearer {config.get("line-bot", "JpBTTQFH+vX0K0xUxmjc8vra86Ivv76ZIyK9njcPLO4UoAVwZkses3C8aNTqVQyvqjPQx+BxkNM+kx/3xCMxWgD3niHFe2XMoY4TLMOqcOq6PIR7cvNm9XZFXqptbzUDQKyxhgg2exHbCndfvyHRDAdB04t89/1O/w1cDnyilFU=")}'
+    'Authorization': F'Bearer {config.get("line-bot", "channel_access_token")}'
 }
 
 
