@@ -28,7 +28,8 @@ HEADER = {
 }
 
 
-@app.route("/", methods=['POST', 'GET'])
+# @app.route("/", methods=['POST', 'GET'])
+@app.route("/", methods=['POST'])
 def index():
     if request.method == 'GET':
         return 'ok'
